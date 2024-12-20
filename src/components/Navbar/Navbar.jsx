@@ -28,12 +28,12 @@ const Navbar = () => {
         <span className="text-xl sm:text-2xl font-bold ml-2">INTERIOR</span>
       </div>
 
-      {/* Hamburger Menu (for mobile) */}w
+     
       <div className="md:hidden" onClick={toggleMenu}>
         {menuOpen ? <FiX size={24} /> : <FiMenu size={16} />}
       </div>
 
-      {/* Link Section - hidden on mobile */}
+    
       <div
         className={`${
           menuOpen ? 'flex' : 'hidden'
@@ -54,7 +54,6 @@ const Navbar = () => {
         ))}
       </div>
 
-      {/* Button Section */}
       <motion.button
       variants={SlideUp(0.6)}
       initial="initial"
